@@ -21,6 +21,9 @@ function msToHoursMinutesSeconds(ms) {
   seconds = seconds % 60;
   minutes = minutes % 60;
 
+  //if you want hours in 24 then uncomment next line
+  //hours = hours % 24;
+
   return `${hours}:${padTo2Digits(minutes)}:${padTo2Digits(seconds)}`;
 }
 
