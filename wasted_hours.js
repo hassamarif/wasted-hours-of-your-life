@@ -21,10 +21,12 @@ function msToHoursMinutesSeconds(ms) {
   seconds = seconds % 60;
   minutes = minutes % 60;
 
-  //if you want hours in 24 then uncomment next line
-  //hours = hours % 24;
+  //if you want hours in 24 then uncomment next line but then you have to calculate months and years also
+  // hours = hours % 24;
 
-  return `${hours}:${padTo2Digits(minutes)}:${padTo2Digits(seconds)}`;
+  return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(
+    seconds
+  )}`;
 }
 
 console.log("You have wasted:", ageCalculator(birthday), "hours of your life");
